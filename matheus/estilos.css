@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    text-align: center;
+    background: #7B68EE
+
+}
+.nav ul li {float: none;width: 150px;display: inline-block;
+    line-height:50px;font-size: 14px;
+}
+
+.nav ul li a {text-decoration: none;color: black;
+     text-align: left
+}
+ 
+nav{text-align:center;
+    background: #ccc;list-style: none;
+    margin-top: -16px
+}
+.farcry{
+    margin: 10px
+}
+.farcry h1{
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+.farcry p{
+    width: 450px;
+    margin-inline-start: 200px;
+    margin-top: -220px
+}
+.gta5{
+    margin: 10px
+}
+.gta5 h1{
+    position: relative;
+    top: -200px;
+    left: 200px
+}
+.gta5 p {
+    width: 450px;
+    margin-inline-start: 200px;
+    margin-top: -200px
+}
+.gtasan{
+    margin: 10px
+}
+.gtasan h1{
+    position: relative;
+    top: -200px;
+    left: 200px
+}
+.gtasan p{
+    width: 450px;
+    margin-inline-start: 200px;
+    margin-top: -200px
+}
+.reddead{
+    margin: 10px
+}
+.reddead img{
+    margin-top:40px 
+}
+.reddead h1{
+    position: relative;
+    top: -200px;
+    left: 200px
+}
+.reddead p{
+    width: 450px;
+    margin-inline-start: 200px;
+    margin-top: -200px
+}
+.bo2{
+    margin: 10px
+}
+.bo2 img{
+    margin-top: 20px
+}
+.bo2 h1{
+    position: relative;
+    top: -200px;
+    left: 200px
+}
+.bo2 p{
+    width: 450px;
+    margin-inline-start: 200px;
+    margin-top: -200px
+}
+.img-console{
+    margin: -10px;
+    margin-top: -1000px;
+    position: relative;
+    left: 1100px
+}
+.face{
+    position: relative; 
+    left: 1130px
+}
+.page{
+    position: relative;
+    left: 1000px
+}
+.social{
+    position: relative; 
+    left: 1130px
+}
+.img-social{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:  -30px;
+}
+.wpp{
+    position: relative; 
+    left: 1130px;
+    padding: 8px
+}
+.face{
+    position: relative; 
+    left: 1130px;
+    padding: 8px
+}
+.google{
+    position: relative; 
+    left: 1130px;
+    padding: 8px
+}
+.footer{
+    text-align: center;
+    position: relative;
+    top: 60px
+}
