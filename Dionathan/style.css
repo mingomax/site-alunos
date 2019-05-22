@@ -45,5 +45,16 @@ header nav {
     align-items: center;
 }
 .row a {
+    font-weight: bold;
+    color: #000;
+}
+.row a:hover, .row a:active, .row a:focus {
+    font-weight: normal;
+}
 
+@media (max-wight: 720px) {
+    body {margin: 0;}
+    .row {flex-direction: column;}
+    .row a {margin: 5px 0;}
+    .separator{color: #787171;}
 }
