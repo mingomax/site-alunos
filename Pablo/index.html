@@ -3,14 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <title>LovEvent</title>
 </head>
 
 <body>
 
+        <span class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </span>
+        
     <header>
-        <img src="LovEvent.PNG" alt="LovEvent">
+
+        
+
+        <img src="assets/images/LovEvent.PNG" alt="LovEvent">
         <nav>
             <a href="">Menu item 1</a>
             <span>·</span>
@@ -25,20 +35,19 @@
             <a href="">Menu item 6</a>
         </nav>
     </header>
-    <!--
-    <main class="main">
-        <section class="section-mvp">
-            <div class="content">
-                <img class="thumbnail" src="ragnarok_online_0603.jpeg" alt="Classes">
-                <article class="item">
-                    <h3>
-                        Classes
-                    </h3>
-                    Em Ragnarök, você sempre começa com um personagem Aprendiz e vai evoluindo. É possível escolher
-                    sua classe e evoluções, montar sua própria árvore de habilidades e definir o seu estilo de luta!
-                </article>
-            </div>
-            <div class="content border">
+
+    <main>
+        <section>
+            <img src="assets/images/thumbnail1.PNG" alt="Menu item 1">
+            <article>
+                <h3>
+                    Menu item 1, Menu item 1, Menu item 1.
+                </h3>
+                Em Ragnarök, você sempre começa com um personagem Aprendiz e vai evoluindo. É possível escolher
+                sua classe e evoluções, montar sua própria árvore de habilidades e definir o seu estilo de luta!
+            </article>
+
+            <!--<div class="content border">
                 <img class="thumbnail radius" src="f31e62_e271693fe85b44f6a815921341e10e75~mv2.jpg" alt="Monstros">
                 <article class="item">
                     <h3>
@@ -90,12 +99,19 @@
             <img class="thumbnail-2" src="thumb-arcebispos.jpg" alt="Archebispa">
             <img class="thumbnail-2" src="thumb-sentinelas.jpg" alt="Sentinela">
 
-        </div>
+        </div>-->
     </main>
     <footer>
 
     </footer>
-    -->
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+
 </body>
 
 </html>
