@@ -52,9 +52,82 @@ header nav {
     font-weight: normal;
 }
 
+.flex-container {
+    margin: 20px 5px;
+    padding: 20px 5px;
+    border: 2px rgb(44, 43, 43) solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 70%;
+}
+.img-default{
+    content: "";
+    display: flex;
+    flex-direction: row-reverse;
+    border: 15px rgba(255, 255, 255, 0) solid;
+  
+    
+}
+
+footer {
+    content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+
 @media (max-wight: 720px) {
     body {margin: 0;}
     .row {flex-direction: column;}
     .row a {margin: 5px 0;}
     .separator{color: #787171;}
 }
+/* media social */
+.fb-page {
+    display: block;
+    content: "";
+    flex-direction: row-reverse;
+    float: left;
+    width: 29%;
+
+        
+}
+
+.social-icon {
+    contain: "";
+    float: left;
+    width: 13%;
+}
+.fa-facebook {
+    float: left;
+    width: 29%;
+    border-radius: 60%;
+    margin: 5px 2px;
+    padding:20px;
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    border-radius: 60%;
+    margin: 5px 2px;
+    padding:20px;
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    border-radius: 60%;
+    margin: 5px 2px;
+    padding:20px;
+    background: #dd4b39;
+    color: white;
+  }
+
+  
