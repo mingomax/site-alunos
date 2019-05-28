@@ -10,10 +10,10 @@
 body {
     font-size: 14px;
     line-height: 1.2;
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
-/** Ajust header **/
+/*______ Ajust header(Menú) ____________________*/
 
 header {
     width: 100%;
@@ -39,7 +39,6 @@ header nav {
 }
 .row {
     display: flex;
-    flex-direction: row;
     justify-items: center;
     justify-content: space-around;
     align-items: center;
@@ -50,29 +49,26 @@ header nav {
 }
 .row a:hover, .row a:active, .row a:focus {
     font-weight: normal;
-}
 
-.flex-container {
-    margin: 20px 5px;
-    padding: 20px 5px;
-    border: 2px rgb(44, 43, 43) solid;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    display: flex;
-    flex-direction: row;
-    float: left;
-    width: 70%;
 }
-.img-default{
-    content: "";
+/*____ Conteúdo da Página ___________________*/
+
+body section {
     display: flex;
-    flex-direction: row-reverse;
-    border: 15px rgba(255, 255, 255, 0) solid;
-  
+    
+}
+body section section {
+    width: 70%;
+    content: "";
+}
+body section article {
+    content: "";
+    width: 27%;
+    padding: 5px;
     
 }
 
+/*___ Rodapé da página________________________*/
 footer {
     content: "";
   display: table;
@@ -88,7 +84,9 @@ footer {
     .row a {margin: 5px 0;}
     .separator{color: #787171;}
 }
-/* media social */
+
+
+/*______ media social ____________________
 .fb-page {
     display: block;
     content: "";
@@ -130,4 +128,4 @@ footer {
     color: white;
   }
 
-  
+  _____*/
