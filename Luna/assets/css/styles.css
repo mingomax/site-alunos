@@ -16,7 +16,6 @@
     
 }
 
-
 html {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
@@ -27,6 +26,83 @@ html {
 header {
     display: flex;
     flex-direction: column;
+
+}
+
+header img {
+    display: flex;
+    align-self: center;
+    padding: 8px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0;
+
+}
+
+span {
+    font-size: 20px;
+    font: bold;
+
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    color: #4d4d4d;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #46552c;
+    font: bold;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 5px;
+
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
+
+article img {
+    width: 222px;
+    height: 158px;
+    padding: 0 5px;
+
+}
+
+aside {
+    width: 30%;
+    padding-top: 5px;
+    
+}
+
+aside img {
+    width: 100%;
+    padding: 5px 0;
 
 }
 
@@ -59,102 +135,5 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-
-}
-
-.logotop {
-    display: flex;
-    align-self: center;
-    
-}
-/*
-html {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #094194;
-    padding: 20px 0;
-
-}
-
-a {
-    padding: 0 10px;
-    color: #ffffff;
-    border-bottom: #094194;
-}
-
-.content {
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-}
-
-.content-2 {
-    width: 740px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    box-sizing: border-box;
-
-}
-
-.thumbnail {
-    width: 285px;
-    height: 210px;
-    padding: 0 10px;
-
-}
-
-.thumbnail-2 {
-    width: 420px;
-    height: 200px;
-    padding: 10px;
-}
-
-.fb-page {
-    padding: 10px;
-}
-
-#face {
-    padding: 10px;
-}
-
-.border {
-    border-top: 5px solid #094194;
-    
-}
-
-.item {
-    width: 500px;
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.radius {
-    border-radius: 5px;
-
-}
-
-.main{
-    display: flex;
-
-}
-
-.section-mvp {
-    flex-direction: column;
-    align-items: center;
 
 }

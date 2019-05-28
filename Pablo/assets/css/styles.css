@@ -8,6 +8,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@media (max-wigth: 720px) {
+    body {margin: 0;}
+    .row {flex-direction: column;}
+    .row a {margin: 5px 0;}
+    .separator {color: #787171;}
+    
+}
+
 html {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
@@ -92,16 +100,14 @@ a:hover {
 }
 
 section {
+    width: 70%;
     border: 2px solid #ff0000;
 
 }
 
-@media (max-wigth: 720px) {
-    body {margin: 0;}
-    .row {flex-direction: column;}
-    .row a {margin: 5px 0;}
-    .separator {color: #787171;}
-    
+aside {
+    width: 30%;
+    border: 2px solid #39720b;
 }
 
 /**
@@ -159,8 +165,7 @@ a {
 }
 
 .thumbnail-2 {
-    width: 420px;
-    height: 200px;
+    width: 65%;
     padding: 10px;
 }
 
