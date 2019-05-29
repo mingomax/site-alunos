@@ -81,6 +81,11 @@ section {
 
 }
 
+.bbottom {
+    border-bottom: 2px solid #000000;
+
+}
+
 .border {
     display: flex;
     justify-content: center;
@@ -92,8 +97,13 @@ section {
 article {
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding: 10px;
     
+}
+
+p {
+    padding-top: 20px;
+
 }
 
 article img {
@@ -122,6 +132,17 @@ aside {
 }
 
 aside img {
+    width: 100%;
+    padding: 5px 0;
+
+}
+
+h2 {
+    padding: 0 0 10px 0;
+
+}
+
+.fbpage {
     width: 100%;
     padding: 5px 0;
 
