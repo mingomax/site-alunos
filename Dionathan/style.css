@@ -53,28 +53,28 @@ header nav {
 }
 /*____ Conteúdo da Página ___________________*/
 
-body section {
+main {
     display: flex;
-    
+    justify-content: space-between;
 }
-body section section {
+
+main section {
     width: 70%;
-    content: "";
 }
-body section article {
-    content: "";
-    width: 27%;
-    padding: 5px;
-    
+
+.headline {
+    display: flex;    
+}
+.headline div {
+    flex-direction: column; 
+    justify-content: center;
+}
+.content {
+    l
 }
 
 /*___ Rodapé da página________________________*/
-footer {
-    content: "";
-  display: table;
-  clear: both;
-  
-}
+
 
 
 
