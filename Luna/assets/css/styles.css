@@ -33,6 +33,7 @@ header img {
     display: flex;
     align-self: center;
     padding: 8px 0;
+    border-radius: 0%;
 }
 
 nav {
@@ -45,13 +46,13 @@ nav {
 
 }
 
-span {
+.ponto {
     font-size: 20px;
     font: bold;
 
 }
 
-a {
+.menu {
     display: flex;
     flex-direction: row;
     color: #4d4d4d;
@@ -59,7 +60,7 @@ a {
 
 }
 
-a:hover {
+nav a:hover {
     text-decoration: underline;
     font-size: 16px;
     color: #46552c;
@@ -80,29 +81,72 @@ section {
 
 }
 
+.border {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgba(0, 0, 0,0.3);
+    padding-top: 5px;
+
+}
+
 article {
     display: flex;
     flex-direction: row;
     padding: 5px;
-
+    
 }
 
 article img {
     width: 222px;
     height: 158px;
     padding: 0 5px;
+    
+}
 
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    
 }
 
 aside {
     width: 30%;
     padding-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 aside img {
     width: 100%;
     padding: 5px 0;
+
+}
+
+.pagination a {
+    color: #000000;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 50%;
+
+}
+  
+.pagination a.active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #dddddd;
+    border-radius: 50%;    
 
 }
 
