@@ -13,6 +13,7 @@
     .row {flex-direction: column;}
     .row a {margin: 5px 0;}
     .separator {color: #787171;}
+    aside {overflow: hidden;}
     
 }
 
@@ -23,17 +24,25 @@ html {
 
 }
 
-header {
-    display: flex;
+.column {
     flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
 
 }
 
-header img {
+header {
+    display: flex;
+
+}
+
+header figure {
     display: flex;
     align-self: center;
     padding: 8px 0;
-    border-radius: 0%;
+    
 }
 
 nav {
@@ -54,7 +63,6 @@ nav {
 
 .menu {
     display: flex;
-    flex-direction: row;
     color: #4d4d4d;
     text-decoration: none;
 
@@ -70,12 +78,11 @@ nav a:hover {
 
 main {
     display: flex;
-    flex-direction: row;
+
 }
 
 section {
     display: flex;
-    flex-direction: column;
     width: 70%;
     padding: 5px;
 
@@ -96,7 +103,6 @@ section {
 
 article {
     display: flex;
-    flex-direction: row;
     padding: 10px;
     
 }
@@ -106,7 +112,8 @@ p {
 
 }
 
-article img {
+article figure {
+    display: flex;
     width: 222px;
     height: 158px;
     padding: 0 5px;
@@ -115,7 +122,6 @@ article img {
 
 div {
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     padding-left: 10px;
     
@@ -126,12 +132,11 @@ aside {
     padding-top: 5px;
     margin-left: 10px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     
 }
 
-aside img {
+aside .img2 {
     width: 100%;
     padding: 5px 0;
 
@@ -149,14 +154,12 @@ h2 {
 }
 
 .pagination a {
-    color: #000000;
-    float: left;
     padding: 5px 10px;
     text-decoration: none;
-    border-radius: 50%;
+    color: #000000;
 
 }
-  
+
 .pagination a.active {
     background-color: #ffffff;
     color: #000000;
@@ -164,23 +167,24 @@ h2 {
     border-radius: 50%;
 
 }
-  
+
 .pagination a:hover:not(.active) {
-    background-color: #dddddd;
-    border-radius: 50%;    
+    background-color: #bebebe;
+    border-radius: 50%;
 
 }
+
+/* MENU HAMBURGUER */
 
 .container {
     display: inline-block;
     cursor: pointer;
-
 }
   
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #333333;
     margin: 6px 0;
     transition: 0.4s;
 
