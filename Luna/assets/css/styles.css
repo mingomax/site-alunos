@@ -8,15 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-@media (max-wigth: 720px) {
-    body {margin: 0;}
-    .row {flex-direction: column;}
-    .row a {margin: 5px 0;}
-    .separator {color: #787171;}
-    aside {overflow: hidden;}
-    
-}
-
 html {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
@@ -55,7 +46,7 @@ nav {
 
 }
 
-.ponto {
+.separator {
     font-size: 20px;
     font: bold;
 
@@ -112,7 +103,7 @@ p {
 
 }
 
-article figure {
+.thumbnail {
     display: flex;
     width: 222px;
     height: 158px;
@@ -136,7 +127,7 @@ aside {
     
 }
 
-aside .img2 {
+.img2 {
     width: 100%;
     padding: 5px 0;
 
@@ -179,6 +170,8 @@ h2 {
 .container {
     display: inline-block;
     cursor: pointer;
+    display: none;
+
 }
   
 .bar1, .bar2, .bar3 {
@@ -204,5 +197,17 @@ h2 {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+
+}
+
+@media screen and (max-width: 720px) {
+    
+    body {margin: 0; font-size: 10px;}
+    .row {flex-direction: column;}
+    .row a {margin: 5px 0;}
+    .separator {color: #787171;}
+    aside {display: none;}
+    .container {display: initial;}
+    nav {display: none;}
 
 }
