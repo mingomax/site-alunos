@@ -1,18 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /* RESET CSS*/
 
 * {
     margin: 0;
     padding: 0;
-    
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 html {
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
-    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    /* 16px padrao */
+}
 
+body {
+    font-size: 1.4em;
+    /* 14px */
+    padding: 0 10px;
+}
+
+header {
+    display: flex;
+}
+
+header figure {
+    display: flex;
+    align-self: center;
+    padding: 8px 0;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #46552c;
+    font: bold;
+}
+
+.menu {
+    color: #4d4d4d;
+    text-decoration: none;
 }
 
 .column {
@@ -24,131 +60,69 @@ html {
 
 }
 
-header {
-    display: flex;
-
-}
-
-header figure {
-    display: flex;
-    align-self: center;
-    padding: 8px 0;
-    
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid #000000;
-    border-left: 0;
-    border-right: 0;
-    padding: 10px 0;
-
-}
-
 .separator {
     font-size: 20px;
     font: bold;
-
 }
 
-.menu {
-    display: flex;
-    color: #4d4d4d;
-    text-decoration: none;
-
-}
-
-nav a:hover {
-    text-decoration: underline;
-    font-size: 16px;
-    color: #46552c;
-    font: bold;
-
-}
 
 main {
     display: flex;
-
 }
 
-section {
-    display: flex;
+main section {
     width: 70%;
     padding: 5px;
+}
 
+main aside {
+    padding-top: 5px;
+    margin-left: 10px;
+    align-items: center;
 }
 
 .bbottom {
     border-bottom: 2px solid #000000;
-
 }
 
 .border {
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid rgba(0, 0, 0,0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
     padding-top: 5px;
-
 }
 
-article {
+section article {
     display: flex;
     padding: 10px;
-    
 }
 
 p {
     padding-top: 20px;
-
 }
 
 .thumbnail {
-    display: flex;
     width: 222px;
     height: 158px;
     padding: 0 5px;
-    
-}
-
-div {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10px;
-    
-}
-
-aside {
-    width: 30%;
-    padding-top: 5px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    
+    margin-right: 10px;
 }
 
 .img2 {
     width: 100%;
     padding: 5px 0;
-
 }
 
 h2 {
     padding: 0 0 10px 0;
-
 }
 
-.fbpage {
-    width: 100%;
-    padding: 5px 0;
-
+.pagination {
+    padding: 10px;
+    text-align: center
 }
-
 .pagination a {
     padding: 5px 10px;
     text-decoration: none;
     color: #000000;
-
 }
 
 .pagination a.active {
@@ -156,58 +130,51 @@ h2 {
     color: #000000;
     border: 1px solid #000000;
     border-radius: 50%;
-
 }
 
 .pagination a:hover:not(.active) {
     background-color: #bebebe;
     border-radius: 50%;
-
-}
-
-/* MENU HAMBURGUER */
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-    display: none;
-
-}
-  
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333333;
-    margin: 6px 0;
-    transition: 0.4s;
-
-}
-  
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-
-}
-  
-.change .bar2 {
-      opacity: 0;
-
-}
-  
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-
 }
 
 @media screen and (max-width: 720px) {
-    
-    body {margin: 0; font-size: 10px;}
-    .row {flex-direction: column;}
-    .row a {margin: 5px 0;}
-    .separator {color: #787171;}
-    aside {display: none;}
-    .container {display: initial;}
-    nav {display: none;}
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    header nav  {
+        flex-direction: column;
+    }
+
+    header nav  a {
+        margin: 5px 0;
+        border-bottom: 1px solid #4d4d4d;
+    }
+    header nav  a:last-child {
+        border-bottom: none;
+    }
+
+    .separator {
+       display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .container {
+        display: initial;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
 
 }
