@@ -90,10 +90,18 @@ section article {
     padding: 10px;
 }
 
+section figure {
+    background: #e7e7e7;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    /* padding: 5px 1px 1px 1px; */
+}
+
 .thumbnail {
+    border-radius: 10px;
     width: 222px;
     height: 158px;
-    padding: 0 5px;
+    padding: 3px 8px;
 }
 
 article div {
@@ -191,6 +199,10 @@ footer h4{
         flex-direction: column;
     }
 
+    section figure {
+        padding: 7px 7px 3px 7px;
+    }
+
     .thumbnail {
         padding: 0;
         margin: 0;
@@ -208,6 +220,8 @@ footer h4{
 
     body {
         padding: 0;
+        padding-right: 10px;
+        padding-left: 10px;
         margin: 0;
         font-size: 1.2em;
     }
@@ -217,15 +231,20 @@ footer h4{
         padding: 5px 0 5px 5px;
     }
 
-    div {
-        border: 1px solid #bc43c7;
-    }
-
     main aside {
         width: 35%;
         padding: 0;
         padding-right: 5px;
         padding-left: 5px;
         margin: 0;
+    }
+
+    main aside figure {
+        /* width: 100% */;
+        
+    }
+
+    section figure {
+        padding-top: 7px;
     }
 }
