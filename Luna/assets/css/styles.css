@@ -78,7 +78,7 @@ main section {
 
 main aside {
     padding-top: 5px;
-    margin-left: 10px;
+    padding-left: 5px;
 }
 
 .border-bottom {
@@ -204,7 +204,7 @@ footer h4{
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 721px) {
 
     body {
         padding: 0;
@@ -214,18 +214,18 @@ footer h4{
 
     main section {
         width: 65%;
+        padding: 5px 0 5px 5px;
     }
 
     div {
         border: 1px solid #bc43c7;
     }
 
-    p {
-        padding: 0;
-    }
-
     main aside {
-        width: 30%;
+        width: 35%;
+        padding: 0;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin: 0;
     }
-
 }
