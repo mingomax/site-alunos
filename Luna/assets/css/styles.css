@@ -21,6 +21,7 @@ body {
 
 header {
     display: flex;
+    padding: 0 5px;
 }
 
 header figure {
@@ -30,16 +31,16 @@ header figure {
 }
 
 
-header nav {
+header .top-nav {
     display: flex;
     justify-content: space-around;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     border-left: 0;
     border-right: 0;
     padding: 10px 0;
 }
 
-nav a:hover {
+.top-nav a:hover {
     text-decoration: underline;
     font-size: 16px;
     color: #46552c;
@@ -78,16 +79,10 @@ main section {
 main aside {
     padding-top: 5px;
     margin-left: 10px;
-    align-items: center;
 }
 
-.bbottom {
+.border-bottom {
     border-bottom: 2px solid #000000;
-}
-
-.border {
-    border-top: 2px solid rgba(0, 0, 0, 0.3);
-    padding-top: 5px;
 }
 
 section article {
@@ -95,30 +90,36 @@ section article {
     padding: 10px;
 }
 
-p {
-    padding-top: 20px;
-}
-
 .thumbnail {
     width: 222px;
     height: 158px;
     padding: 0 5px;
-    margin-right: 10px;
 }
 
-.img2 {
+article div {
+    padding: 0 10px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+.thumbnail-aside {
     width: 100%;
     padding: 5px 0;
 }
 
 h2 {
-    padding: 0 0 10px 0;
+    text-align: center;
 }
 
 .pagination {
     padding: 10px;
-    text-align: center
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
 }
+
 .pagination a {
     padding: 5px 10px;
     text-decoration: none;
@@ -137,6 +138,16 @@ h2 {
     border-radius: 50%;
 }
 
+footer {
+    padding: 0 5px;
+}
+
+footer h4{
+    padding: 5px;
+    border-top: 2px solid #000000;
+    text-align: center;
+}
+
 @media screen and (max-width: 720px) {
 
     body {
@@ -145,36 +156,76 @@ h2 {
         font-size: 1.2em;
     }
 
-    header nav  {
+    header .top-nav {
         flex-direction: column;
+        padding: 0 5px;
     }
 
-    header nav  a {
-        margin: 5px 0;
+    header .top-nav a {
+        padding: 5px 0;
         border-bottom: 1px solid #4d4d4d;
+        text-align: center;
     }
-    header nav  a:last-child {
+
+    header .top-nav a:last-child {
         border-bottom: none;
     }
 
+    .top-nav {
+        display: none;
+    }
+
     .separator {
-       display: none;
+        display: none;
     }
 
     aside {
         display: none;
     }
 
-    .container {
-        display: initial;
-    }
-
-    nav {
-        display: none;
-    }
-
-    section {
+    main section {
         width: 100%;
+    }
+
+    section article {
+        flex-direction: column;
+    }
+
+    .thumbnail {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    div h3 {
+        padding-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    main section {
+        width: 65%;
+    }
+
+    div {
+        border: 1px solid #bc43c7;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    main aside {
+        width: 30%;
     }
 
 }
