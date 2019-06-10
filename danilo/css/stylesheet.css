@@ -197,9 +197,6 @@ footer nav a {
     aside {
         visibility: collapse;
     }
-    span {
-   
-}
 
 @media screen and (max-width: 600px){
     h1 {
@@ -236,4 +233,4 @@ footer nav a {
     article {
         width: 100%;
     }
-}   
+}
