@@ -87,14 +87,12 @@ main aside {
 
 section article {
     display: flex;
-    padding: 10px;
 }
 
 section figure {
     background: #eeeeee;
     border: 1px solid #a0a0a0;
     border-radius: 10px;
-    /* padding: 5px 1px 1px 1px; */
 }
 
 .thumbnail {
@@ -104,12 +102,16 @@ section figure {
     padding: 3px 8px;
 }
 
+.padding {
+    padding: 5px;
+}
+
 article div {
     padding: 0 10px;
 }
 
 p {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .thumbnail-aside {
@@ -216,7 +218,7 @@ footer h4{
 
 }
 
-@media screen and (max-width: 800px) and (min-width: 721px) {
+@media screen and (min-width: 721px) and (max-width: 800px) {
 
     body {
         padding: 0;
@@ -239,7 +241,14 @@ footer h4{
         margin: 0;
     }
     
-    section figure {
+    article figure {
         padding-top: 7px;
+    }
+
+    img.thumbnail {
+        width: 148px;
+        height: 105px;
+        /* width: 64%;
+        height: 64%; */
     }
 }
