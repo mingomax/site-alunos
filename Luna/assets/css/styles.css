@@ -127,7 +127,6 @@ h2 {
     padding: 10px;
     text-align: center;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
-    padding-top: 10px;
 }
 
 .pagination a {
@@ -248,16 +247,74 @@ footer h4{
     img.thumbnail {
         width: 148px;
         height: 105px;
-        /* width: 64%;
-        height: 64%; */
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1920px) {
+@media screen and (min-width: 801px) and (max-width: 1280px) {
 
     body {
-        /* padding: 0;
-        margin: 0; */
+        padding: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 0;
+        font-size: 1.6em;
     }
 
+    main section {
+        width: 65%;
+    }
+
+    main aside {
+        width: 35%;
+        padding-right: 5px;
+    }
+
+    .pagination a {
+        padding: 3px 10px;
+        }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+
+    body {
+        width: 1280px;
+        padding: 0;
+        margin: auto;
+        font-size: 1.6em;
+    }
+
+    main section {
+        width: 65%;
+    }
+
+    main aside {
+        width: 35%;
+        padding-right: 5px;
+    }
+
+    .pagination a {
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+
+    body {
+        width: 1280px;
+        padding: 0;
+        margin: auto;
+        font-size: 1.6em;
+    }
+
+    main section {
+        width: 65%;
+    }
+
+    main aside {
+        width: 35%;
+        padding-right: 5px;
+    }
+    .pagination a {
+        padding: 3px 10px;
+    }
 }
