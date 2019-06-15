@@ -189,6 +189,21 @@ aside img{
     padding: 1px;
     margin: 2px;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    border-top: 2px solid #000;
+    margin: 20px 0 0 0;
+}
+
+footer img {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ff4499; 
+    margin: 10px 0;
+}
+
 /* MOBILE */
 @media screen and (max-width: 480px) {
     body{
@@ -285,10 +300,6 @@ aside img{
     aside {
         display: none;
     } 
-
-    footer {
-        display: none;
-    }
 }
 
 /* SUPER TABLETS (Ipad, iPado Pro, Galaxy Tab Pro e derivados */
@@ -307,10 +318,5 @@ aside img{
 
     aside {
         display: none;
-    }
-
-    footer {
-        display: none;
-
     }
 }
